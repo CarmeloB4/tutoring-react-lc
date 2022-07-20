@@ -17,4 +17,10 @@ Affronteremo questo progetto step by step, in modo tale che chi segue questa gui
 ### Come strutturare il progetto
 ### Creazione dei componenti shared
 ### Creazione della pagina
-### Come utilizzare 
+### Come utilizzare useState e useEffect
+### Comunicazione tra componenti
+<hr/><br>
+## Bonus step
+### Aggiungiamo la navigazione
+### Chiamate di rete
+### Aggiungiamo redux
