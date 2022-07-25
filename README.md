@@ -47,7 +47,12 @@ La nostra pagina 'Home' conterrà tutta la logica della nostra piccola applicazi
 Un aspetto fondamentale infatti è la comunicazione tra componente padre e figlio, un problema che pongo sempre è, dobbiamo realizzare la nostra app in modo tale che il padre passi un dato ad un figlio, e se il figlio compie un azione al suo interno (CTA - call to action, può essere un bottone acquista), la logica di 'acquisto' deve essere contenuta nel padre. <br>
 Più in avanti vedrete Redux che semplificherà un po' le cose.
 ### Come utilizzare useState e useEffect
-Nel nostro caso abbiamo bisogno di due stati iniziali. 
+Nel nostro caso abbiamo bisogno di due stati iniziali. <br>
+![state](https://user-images.githubusercontent.com/66789080/180780495-d085a615-1c57-46d2-970a-975e8e8359b0.png) <br>
+Nel primo stato andiamo ad indicare tutti i prodotti, nel secondo stato invece, andiamo ad indicare i prodotti aggiunti al carrello.
+Per iniziallizare il nostro stato, utilizzeremo l'useEffect in modo tale che al rendering della pagina andremo a 'riempire' il nostro stato (meglio definire tecnicamente, settare il nostro stato). <br>
+![effect](https://user-images.githubusercontent.com/66789080/180781563-aead4413-4c57-4e9c-9540-9e7270071031.png) <br>
+Al momento immaginiamo data come array di oggetti, nel bonus step, il nostro data sarà in realtà il risultato di una chiamata API.
 ### Comunicazione tra componenti
 Passare dati tra Home e Card e viceversa
 
