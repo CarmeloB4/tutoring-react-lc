@@ -54,9 +54,22 @@ Per iniziallizare il nostro stato, utilizzeremo l'useEffect in modo tale che al 
 ![effect](https://user-images.githubusercontent.com/66789080/180781563-aead4413-4c57-4e9c-9540-9e7270071031.png) <br>
 Al momento immaginiamo data come array di oggetti, nel bonus step, il nostro data sarà in realtà il risultato di una chiamata API.
 ### Comunicazione tra componenti
-Passare dati tra Home e Card e viceversa
+Come dicevamo, abbiamo diviso la nostra applicazione in smart components e dummy components, quindi dobbiamo passare dei dati tra componenti. Questa operazione su React possiamo farla attraverso le props. <br>
+Il concetto di props consiste nel passaggio di dati tra padre e figlio. In questo modo possiamo organizzare la logica in componenti principali e passare i dati a componenti figli. <br>
+Doc: https://it.reactjs.org/docs/components-and-props.html
 
 ## Bonus step
 ### Aggiungiamo la navigazione
+Immaginate adesso di avere un paio di pagine in più, oltre alla nostra Home, avremo alvre due pagine <code>Contacts</code> e <code>About us</code>. <br>
+Per raggiungere queste pagine intanto, dovremmo inserire delle voci nella nostra Navbar, che quindi avrà tre link: Home, Contacts, About us. Per gestire la navigazione con React, abbiamo bisogno di una libreria: https://github.com/remix-run/react-router#readme <br>
+Grazie alla libreria <code>react-router</code> possiamo facilmente aggiungere la navigazione tra pagine alla nostra applicazione.
+Qui un semplice esempio: https://v5.reactrouter.com/web/example/basic
 ### Chiamate di rete
+Per rendere la nostra applicazione completa, possiamo aggiungere finalmente la chiamata di rete, per far questo, dovete almeno avere conoscenza di come funzionano le chiamate asincrone con Javascript. <br>
+Inizialmente, possiamo gestire la nostra chiamata tramite il classico <code>fetch</code> https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch <br>
+L'API dalla quale vogliamo attingere è la seguente: https://db.ygoprodeck.com/api/v7/randomcard.php <br>
+Modificate quindi la nostra applicazione in base alla risposta della API (prima avevamo un array di oggetti, invece adesso?) <br>
+<br>
+*dopo aver lavorato con il fetch, provate questa libreria: https://swr.vercel.app/docs/getting-started
 ### Aggiungiamo redux
+*questa sarà la parte più complessa della nostra applicazione
