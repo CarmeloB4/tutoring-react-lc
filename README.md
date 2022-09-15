@@ -7,6 +7,9 @@ Potete forkare questa repository e lavorare tranquillamente alla vostra soluzion
 <br>
 Affronteremo questo progetto step by step, in modo tale che chi segue questa guida può autonomamente andare avanti, anche magari sbirciando dalle soluzioni. Cercherò comunque di inserire più commenti e riferimenti esterni (link a documentazione, ect..) possibili.
 
+### VsCode Extension
+Simple React Snippets: https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets
+
 ## Step 
 ### Creazione del progetto
 Partiamo dallo script che crea il nostro boilerplate del progetto React, basta lanciare quindi <code>npx create-react-app <nome progetto></code><br>
